@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to Kim Young-sook</title>
+    
+    <!-- Load Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+
+    <!-- ElevenLabs Conversational AI -->
+    <script src="https://elevenlabs.io/convai-widget/index.js" async></script>
+    
+    <!-- Link External Styles & Scripts -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Talk to Kim Young-sook</h1>
+        <p>Speak directly, and the AI will respond.</p>
+        <button onclick="startVoiceConversation()">🎤 Start Conversation</button>
+        <audio id="aiResponseAudio" controls></audio>
+    </div>
+
+    <!-- Three.js Canvas -->
+    <canvas id="threejs-canvas"></canvas>
+</body>
+</html>
